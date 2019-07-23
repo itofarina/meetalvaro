@@ -108,7 +108,7 @@
 
 })(jQuery);
 
-sendAnalyticsEvent = (eCategory, eAction, eLabel) => {
+function sendAnalyticsEvent(eCategory, eAction, eLabel) {
 	ga('send', 'event', {
 		eventCategory: eCategory,
 		eventAction: eAction,
