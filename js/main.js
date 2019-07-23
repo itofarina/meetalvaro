@@ -97,6 +97,15 @@
 		});
 	}
 
+	$(function () {
+		$('#paigoProjectModalContainer').load('./projects/paigo.html');
+		$('#qtpdProjectModalContainer').load('./projects/qtpd.html');
+		$('#ttvProjectModalContainer').load('./projects/ttv.html');
+		$('#abjjuProjectModalContainer').load('./projects/abjju.html');
+		$('#gongosProjectModalContainer').load('./projects/gongos.html');
+		$('#tcaProjectModalContainer').load('./projects/tca.html');
+	});
+
 })(jQuery);
 
 sendAnalyticsEvent = (eCategory, eAction, eLabel) => {

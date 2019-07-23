@@ -9,8 +9,7 @@
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- <link href="img/favicon.png" rel="icon"> -->
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -85,12 +84,14 @@
           <p class="intro-subtitle">I'm <span class="text-slider-items">a Software Engineer,a Full-Stack Developer,
               Proactive,a Scrum Master</span><strong class="text-slider"></strong></p>
           <p class="pt-5">
-            <a class="btn btn-primary btn js-scroll px-4" href="#about" role="button"
-              onclick="sendAnalyticsEvent('Home', 'Click', 'LearnMore')">
-              Learn More <i class="fa fa-chevron-down"></i>
-            </a>
           </p>
         </div>
+      </div>
+      <div id="learnMore">
+        <a class="btn btn-primary btn js-scroll px-4" href="#about" role="button"
+          onclick="sendAnalyticsEvent('Home', 'Click', 'LearnMore')">
+          Learn More <i class="fa fa-chevron-down"></i>
+        </a>
       </div>
     </div>
   </div>
@@ -237,10 +238,10 @@
             <div class="service-content">
               <h2 class="s-title">Agile Methodologies</h2>
               <p class="s-description text-center">
-                Planificación de proyectos usando metodologias agiles como Scrum. Certified Scrum Master. Aplicar
-                metodologias agiles, definir procesos, etc...
-                Entregables medibles por cada sprint.
-                Poder entender bien las necesidades del cliente y adaptarlas sprint a sprint
+                Through a process of continuous planning and feedback we can get closer to the goals and particularly to
+                understand the need of the business.
+                With an iterative planning and feedback loop, it is easier to adapt to changing requirements and
+                maximize the value.
               </p>
             </div>
           </div>
@@ -253,9 +254,9 @@
             <div class="service-content">
               <h2 class="s-title">Web Development</h2>
               <p class="s-description text-center">
-                Desarrollo de apps web facilmente escalables con una arquitectura en capas. Desarrollo backend y
-                frontend.
-                Codigo limpio, algoritmos eficientes.
+                Development of easily scalable web applications with a layered architecture. I feel very comfortable
+                with the frontend and backend part of the applications.
+                Clean code, efficient algorythms and the best practices are always applied!
               </p>
             </div>
           </div>
@@ -268,7 +269,9 @@
             <div class="service-content">
               <h2 class="s-title">Result Oriented</h2>
               <p class="s-description text-center">
-                Orientado a resultados para obtener productos exitoso que satisfagan las necesidades de los clientes.
+                Always hustling to achieve the goals and get the wanted results. In order to reach that desired point
+                the goals need to be clear for every person involved in the project. With that in mind it gets easier to
+                have happy customers.
               </p>
             </div>
           </div>
@@ -288,166 +291,163 @@
               Projects
             </h3>
             <p class="subtitle-a">
-              There have been minor projects in which I helped but the most relevant are the following:
+              There have been minor projects in which I helped but the ones I consider the most relevance are the
+              following:
             </p>
             <div class="line-mf"></div>
           </div>
         </div>
       </div>
+      <!-- those divs are just to load the project modals -->
+      <div id="paigoProjectModalContainer"></div>
+      <div id="qtpdProjectModalContainer"></div>
+      <div id="ttvProjectModalContainer"></div>
+      <div id="abjjuProjectModalContainer"></div>
+      <div id="gongosProjectModalContainer"></div>
+      <div id="tcaProjectModalContainer"></div>
+      <!-- the modals are loaded here -->
       <div class="row">
         <div class="col-md-4">
-          <div class="work-box" onclick="sendAnalyticsEvent('Project', 'Click', 'Paigo')">
-            <a href="img/work-1.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/work-1.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Paigo Web Admin</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Entire web site</span> / <span class="w-date">May 2019</span>
-                    </div>
+          <div class="work-box" onclick="sendAnalyticsEvent('Project', 'Click', 'Paigo')" data-toggle="modal"
+            data-target="#paigoProjectModal">
+            <div class="work-img text-center">
+              <img src="img/projects/paigo-project.png" alt="Paigo" class="img-project">
+            </div>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">Paigo Web Admin</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Entire web site</span> / <span class="w-date">Nov. 2018 - Jun 2019</span>
                   </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="w-like">
+                    <span class="ion-ios-plus-outline"></span>
                   </div>
                 </div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="work-box" onclick="sendAnalyticsEvent('Project', 'Click', 'Qtpd')">
-            <a href="img/work-2.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/work-2.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">¿Qué tenés para dar?</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Entire web site</span> / <span class="w-date">July 2019</span>
-                    </div>
+          <div class="work-box" onclick="sendAnalyticsEvent('Project', 'Click', 'QTPD')" data-toggle="modal"
+            data-target="#qtpdProjectModal">
+            <div class="work-img text-center">
+              <img src="img/projects/qtpd-project.png" alt="QTPD" class="img-project">
+            </div>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">¿Qué tenés para dar?</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Co-Founder & Full-stack developer</span> / <span class="w-date">2014 to
+                      Present</span>
                   </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="w-like">
+                    <span class="ion-ios-plus-outline"></span>
                   </div>
                 </div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="work-box" onclick="sendAnalyticsEvent('Project', 'Click', 'TTV')">
-            <a href="img/work-3.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/work-3.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">TocToc Viajes</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Collaborator as a Full-stack web developer and Scrum Master</span> / <span
-                        class="w-date">Nov. 2018</span>
-                    </div>
+          <div class="work-box" onclick="sendAnalyticsEvent('Project', 'Click', 'TTV')" data-toggle="modal"
+            data-target="#ttvProjectModal">
+            <div class="work-img text-center">
+              <img src="img/projects/ttv-project.png" alt="TTV" class="img-project">
+            </div>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">TocToc Viajes</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Collaborator as a Full-stack web developer and Scrum Master</span> / <span
+                      class="w-date">Nov. 2018 - Feb. 2017</span>
                   </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="w-like">
+                    <span class="ion-ios-plus-outline"></span>
                   </div>
                 </div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="work-box" onclick="sendAnalyticsEvent('Project', 'Click', 'ABJJU')">
-            <a href="img/work-4.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/work-4.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">ABJJU</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
+          <div class="work-box" onclick="sendAnalyticsEvent('Project', 'Click', 'ABJJU')" data-toggle="modal"
+            data-target="#abjjuProjectModal">
+            <div class="work-img text-center">
+              <img src="img/projects/abjju-project.jpg" alt="ABJJU" class="img-project">
+            </div>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">ABJJU Board</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Entire Project</span> / <span class="w-date">2018</span>
                   </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="w-like">
+                    <span class="ion-ios-plus-outline"></span>
                   </div>
                 </div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/work-5.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/work-5.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Lena Mado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
+          <div class="work-box" onclick="sendAnalyticsEvent('Project', 'Click', 'Gongos')" data-toggle="modal"
+            data-target="#gongosProjectModal">
+            <div class="work-img text-center">
+              <img src="img/projects/gongos-project.png" alt="Gongos" class="img-project">
+            </div>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">Gongos</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Collaborator as Full-Stack developer</span> / <span class="w-date">2014 -
+                      2015</span>
                   </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="w-like">
+                    <span class="ion-ios-plus-outline"></span>
                   </div>
                 </div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/work-6.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/work-6.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Big Bang</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2017</span>
-                    </div>
+          <div class="work-box" onclick="sendAnalyticsEvent('Project', 'Click', 'TCA')" data-toggle="modal"
+            data-target="#tcaProjectModal">
+            <div class="work-img text-center">
+              <img src="img/projects/tca-project.png" alt="TCA" class="img-project">
+            </div>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">Tu Casa Aquí</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Collaborator as Full-Stack developer</span> / <span class="w-date">2012 -
+                      2013</span>
                   </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="w-like">
+                    <span class="ion-ios-plus-outline"></span>
                   </div>
                 </div>
               </div>
-            </a>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-            Launch demo modal
-          </button>
-
         </div>
       </div>
     </div>
@@ -463,73 +463,37 @@
           <div class="contact-mf">
             <div id="contact" class="box-shadow-full">
               <div class="row">
-                <div class="col-md-6">
+
+                <div class="col-sm-12">
                   <div class="title-box-2">
                     <h5 class="title-left">
-                      Let's talk!
+                      <a href="mailto:farinalvaro@gmail.com">Let's talk!</a>
                     </h5>
                   </div>
-                  <div>
-                    <form action="" method="post" role="form" class="contactForm">
-                      <div id="sendmessage">Your message has been sent. Thank you!</div>
-                      <div id="errormessage"></div>
-                      <div class="row">
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                              data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                            <div class="validation"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                              data-rule="email" data-msg="Please enter a valid email" />
-                            <div class="validation"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                              data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                            <div class="validation"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <textarea class="form-control" name="message" rows="5" data-rule="required"
-                              data-msg="Please write something for me" placeholder="Message"></textarea>
-                            <div class="validation"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <button type="submit" class="button button-a button-big button-rouded"
-                            onclick="sendAnalyticsEvent('Contact', 'Click', 'SendMessage')">Send Message</button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6">
                   <div class="title-box-2 pt-4 pt-md-0">
                   </div>
                   <div class="more-info">
                     <p class="lead">
-                      Have an idea or want to work together? Let's talk!
+                      Have an idea or want to work together? <a href="mailto:farinalvaro@gmail.com">Let's talk!</a>
                     </p>
-                    <p>PS: Any feedback is always appreciated for me.</p>
                     <ul class="list-ico">
                       <li><span class="ion-ios-location"></span>
                         <a href="https://goo.gl/maps/vvUQJdxD2YufsWZU9" target="_blank"
                           onclick="sendAnalyticsEvent('Contact', 'Click', 'Location')">Montevideo, Uruguay</a>
                       </li>
-                      <li><span class="ion-clock"></span>GMT-3 Time Zone</li>
+                      <li><span class="ion-clock"></span>
+                        <a href="https://www.timeanddate.com/worldclock/uruguay/montevideo" target="_blank">GMT-3 Time
+                          Zone</a>
+                      </li>
                       <li><span class="ion-ios-telephone"></span> (+598) 94 994 002</li>
                       <li><span class="ion-email"></span>
                         <a href="mailto:farinalvaro@gmail.com"
                           onclick="sendAnalyticsEvent('Contact', 'Click', 'Mail')">farinalvaro@gmail.com</a>
                       </li>
                     </ul>
+                    <p>PS: Any feedback is always appreciated.</p>
                   </div>
                   <div class="socials">
                     <ul>
@@ -547,11 +511,54 @@
                       <li><a href="https://angel.co/alvaro-farina" target="_blank"
                           onclick="sendAnalyticsEvent('Contact', 'Click', 'AngelList')"><span class="ico-circle"><i
                               class="fab fa-angellist"></i></span></a></li>
-                      <li><a href="https://www.instagram.com/itofarina" target="_blank"
-                          onclick="sendAnalyticsEvent('Contact', 'Click', 'Instagram')"><span class="ico-circle"><i
-                              class="ion-social-instagram"></i></span></a></li>
+                      <li><a href="skype:alvaro-farina?chat"
+                          onclick="sendAnalyticsEvent('Contact', 'Click', 'Skype')"><span class="ico-circle"><i
+                              class="fab fa-skype"></i></span></a></li>
                     </ul>
                   </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                  <img class="img-fluid" src="img/lets-talk.jpg" alt="let's talk!">
+                  <!-- <div>
+                      <form action="" method="post" role="form" class="contactForm">
+                        <div id="sendmessage">Your message has been sent. Thank you!</div>
+                        <div id="errormessage"></div>
+                        <div class="row">
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                              <div class="validation"></div>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                                data-rule="email" data-msg="Please enter a valid email" />
+                              <div class="validation"></div>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                                data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                              <div class="validation"></div>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <textarea class="form-control" name="message" rows="5" data-rule="required"
+                                data-msg="Please write something for me" placeholder="Message"></textarea>
+                              <div class="validation"></div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <button type="submit" class="button button-a button-big button-rouded"
+                              onclick="sendAnalyticsEvent('Contact', 'Click', 'SendMessage')">Send Message</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div> -->
                 </div>
               </div>
             </div>
@@ -561,6 +568,30 @@
     </div>
     <footer>
       <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="socials">
+              <ul>
+                <li><a href="https://www.linkedin.com/in/alvaro-fariña-94265a44" target="_blank"
+                    onclick="sendAnalyticsEvent('Contact', 'Click', 'LinkedIn')">
+                    <span class="ico-circle"><i class="fab fa-linkedin"></i></span></a>
+                </li>
+                <li><a href="https://stackoverflow.com/users/1361335/alvaro" target="_blank"
+                    onclick="sendAnalyticsEvent('Contact', 'Click', 'StackOverflow')"><span class="ico-circle"><i
+                        class="fab fa-stack-overflow"></i></span></a>
+                </li>
+                <li><a href="https://github.com/farinalvaro" target="_blank"
+                    onclick="sendAnalyticsEvent('Contact', 'Click', 'GitHub')"><span class="ico-circle"><i
+                        class="ion-social-github"></i></span></a></li>
+                <li><a href="https://angel.co/alvaro-farina" target="_blank"
+                    onclick="sendAnalyticsEvent('Contact', 'Click', 'AngelList')"><span class="ico-circle"><i
+                        class="fab fa-angellist"></i></span></a></li>
+                <li><a href="skype:alvaro-farina?chat" onclick="sendAnalyticsEvent('Contact', 'Click', 'Skype')"><span
+                      class="ico-circle"><i class="fab fa-skype"></i></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <div class="row">
           <div class="col-sm-12">
             <div class="copyright-box">
@@ -583,40 +614,12 @@
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.min.js"></script>
   <script src="lib/typed/typed.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title" id="myModalLabel">Paigo</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-              aria-hidden="true">&times;</span></button>
-        </div>
-        <div class="modal-body">
-          <p class="lead">
-            Paigo is a financial institution. This project is a web app built to administrate customers and granted
-            loans.
-            I built this app from scratch to help them administer their business. During this project I was also
-            contributing to find the best model for the problem they had.
-          </p>
-          <p>
-            <strong>Technologies used:</strong> Node.js, MongoDB, Express.js, Angular 6, Javascript, HTML, CSS,
-            Bootstrap.
-          </p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
 </body>
 
