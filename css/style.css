@@ -796,6 +796,8 @@ a:hover {
 .work-img {
   display: block;
   overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .img-project {
