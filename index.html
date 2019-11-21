@@ -124,6 +124,10 @@
                         <a href="https://drive.google.com/file/d/13sLhQkB4AoH88fQJiTuyJALqoE3VmViT/view" target="_blank"
                           onclick="sendAnalyticsEvent('About', 'Download', 'Resumee')">Download here :)</a>
                       </p>
+                      <p>
+                        <span class="title-s">Hobbies: </span>
+                        <span>Travelling, camping, trekking, brazilian jiu jitsu and spend time with people who I love.</span>
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -303,6 +307,7 @@
         </div>
       </div>
       <!-- those divs are just to load the project modals -->
+      <div id="hfpProjectModalContainer"></div>
       <div id="paigoProjectModalContainer"></div>
       <div id="qtpdProjectModalContainer"></div>
       <div id="ttvProjectModalContainer"></div>
@@ -312,24 +317,29 @@
       <!-- the modals are loaded here -->
       <div class="row">
         <div class="col-md-4">
+          <div class="work-box" onclick="sendAnalyticsEvent('Project', 'Click', 'HFP')" data-toggle="modal"
+            data-target="#hfpProjectModal">
+            <div class="work-img text-center">
+              <img src="img/projects/hf-project.png" alt="HunterFitness" class="img-project">
+            </div>
+            <div class="work-content">
+              <h2 class="w-title">Hunter Fitness Platform</h2>
+              <div class="w-more">
+                <span class="w-ctegory">Backend developer</span> / <span class="w-date">July 2019 - Nov. 2019</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
           <div class="work-box" onclick="sendAnalyticsEvent('Project', 'Click', 'Paigo')" data-toggle="modal"
             data-target="#paigoProjectModal">
             <div class="work-img text-center">
               <img src="img/projects/paigo-project.png" alt="Paigo" class="img-project">
             </div>
             <div class="work-content">
-              <div class="row">
-                <div class="col-sm-8">
-                  <h2 class="w-title">Paigo Web Admin</h2>
-                  <div class="w-more">
-                    <span class="w-ctegory">Entire web site</span> / <span class="w-date">Nov. 2018 - Jun 2019</span>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="w-like">
-                    <span class="ion-ios-plus-outline"></span>
-                  </div>
-                </div>
+              <h2 class="w-title">Paigo Web Admin</h2>
+              <div class="w-more">
+                <span class="w-ctegory">Entire web site</span> / <span class="w-date">Nov. 2018 - Jun 2019</span>
               </div>
             </div>
           </div>
@@ -341,19 +351,10 @@
               <img src="img/projects/qtpd-project.png" alt="QTPD" class="img-project">
             </div>
             <div class="work-content">
-              <div class="row">
-                <div class="col-sm-8">
-                  <h2 class="w-title">¿Qué tenés para dar?</h2>
-                  <div class="w-more">
-                    <span class="w-ctegory">Co-Founder & Full-stack developer</span> / <span class="w-date">2014 to
-                      Present</span>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="w-like">
-                    <span class="ion-ios-plus-outline"></span>
-                  </div>
-                </div>
+              <h2 class="w-title">¿Qué tenés para dar?</h2>
+              <div class="w-more">
+                <span class="w-ctegory">Co-Founder & Full-stack developer</span> / <span class="w-date">2014 to
+                  Present</span>
               </div>
             </div>
           </div>
@@ -365,19 +366,10 @@
               <img src="img/projects/ttv-project.png" alt="TTV" class="img-project">
             </div>
             <div class="work-content">
-              <div class="row">
-                <div class="col-sm-8">
-                  <h2 class="w-title">TocToc Viajes</h2>
-                  <div class="w-more">
-                    <span class="w-ctegory">Collaborator as a Full-stack web developer & Scrum Master</span> / <span
-                      class="w-date">Nov. 2018 - Feb. 2017</span>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="w-like">
-                    <span class="ion-ios-plus-outline"></span>
-                  </div>
-                </div>
+              <h2 class="w-title">TocToc Viajes</h2>
+              <div class="w-more">
+                <span class="w-ctegory">Collaborator as a Full-stack web developer & Scrum Master</span> / <span
+                  class="w-date">Nov. 2018 - Feb. 2017</span>
               </div>
             </div>
           </div>
@@ -389,18 +381,9 @@
               <img src="img/projects/abjju-project.jpg" alt="ABJJU" class="img-project">
             </div>
             <div class="work-content">
-              <div class="row">
-                <div class="col-sm-8">
-                  <h2 class="w-title">ABJJU Board</h2>
-                  <div class="w-more">
-                    <span class="w-ctegory">Entire Project</span> / <span class="w-date">2018</span>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="w-like">
-                    <span class="ion-ios-plus-outline"></span>
-                  </div>
-                </div>
+              <h2 class="w-title">ABJJU Board</h2>
+              <div class="w-more">
+                <span class="w-ctegory">Entire Project</span> / <span class="w-date">2018</span>
               </div>
             </div>
           </div>
@@ -412,19 +395,10 @@
               <img src="img/projects/gongos-project.png" alt="Gongos" class="img-project">
             </div>
             <div class="work-content">
-              <div class="row">
-                <div class="col-sm-8">
-                  <h2 class="w-title">Gongos</h2>
-                  <div class="w-more">
-                    <span class="w-ctegory">Collaborator as Full-Stack developer</span> / <span class="w-date">2014 -
-                      2015</span>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="w-like">
-                    <span class="ion-ios-plus-outline"></span>
-                  </div>
-                </div>
+              <h2 class="w-title">Gongos</h2>
+              <div class="w-more">
+                <span class="w-ctegory">Collaborator as Full-Stack developer</span> / <span class="w-date">2014 -
+                  2015</span>
               </div>
             </div>
           </div>
@@ -436,19 +410,10 @@
               <img src="img/projects/tca-project.png" alt="TCA" class="img-project">
             </div>
             <div class="work-content">
-              <div class="row">
-                <div class="col-sm-8">
-                  <h2 class="w-title">Tu Casa Aquí</h2>
-                  <div class="w-more">
-                    <span class="w-ctegory">Collaborator as Full-Stack developer</span> / <span class="w-date">2012 -
-                      2013</span>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="w-like">
-                    <span class="ion-ios-plus-outline"></span>
-                  </div>
-                </div>
+              <h2 class="w-title">Tu Casa Aquí</h2>
+              <div class="w-more">
+                <span class="w-ctegory">Collaborator as Full-Stack developer</span> / <span class="w-date">2012 -
+                  2013</span>
               </div>
             </div>
           </div>
