@@ -98,6 +98,7 @@
 	}
 
 	$(function () {
+		$('#volkemaxProjectModalContainer').load('./projects/volkemax.html');
 		$('#hfpProjectModalContainer').load('./projects/hunter-fitness-platform.html');
 		$('#paigoProjectModalContainer').load('./projects/paigo.html');
 		$('#qtpdProjectModalContainer').load('./projects/qtpd.html');
