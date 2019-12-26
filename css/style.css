@@ -798,6 +798,7 @@ a:hover {
   overflow: hidden;
   padding-top: 20px;
   padding-bottom: 20px;
+  min-height: 250px;
 }
 
 .img-project {
